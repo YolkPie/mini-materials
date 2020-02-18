@@ -1,0 +1,34 @@
+{
+  "name": "area-selection",
+  "version": "1.0.0",
+  "description": "区域选择组件",
+  "main": "lib/index.js",
+  "files": [
+    "src/",
+    "build/",
+    "screenshot.png"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/AreaSelection"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ice",
+    "ice-block"
+  ],
+  "blockConfig": {
+    "name": "area-selection",
+    "screenshot": "https://img12.360buyimg.com/imagetools/jfs/t1/92660/27/12716/71487/5e4bab64E05b82777/5715b0c41ed9d433.png",
+    "themePackage": "@icedesign/theme",
+    "title": "区域选择组件",
+    "categories": [
+      "列表"
+    ],
+    "version-0.x": "0.1.9"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://registry.npmjs.com"
+  }
+}
