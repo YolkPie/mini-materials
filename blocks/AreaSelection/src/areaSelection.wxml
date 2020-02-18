@@ -1,0 +1,23 @@
+<!--区域选择组件-->
+<view class="area-sel-box" hidden="{{!isShowAreaSelection}}">
+<!--<view class="area-sel-box">-->
+  <view class="area-sel-mask" bindtap="hideAreaSelection"></view>
+  <view class="area-sel-container">
+    <view class="area-sel-head">
+      <text>区域选择</text>
+      <view class="area-sel-close" bindtap="hideAreaSelection">
+        <image class="close-icon" src="{{closeImg}}"></image>
+      </view>
+    </view>
+    <view class="area-sel-body">
+      <view class="area-sel-tabs">
+        <view class="{{handledAddressInfo.curTabIndex == tabIndex ? 'area-cur':''}}" wx:for="{{handledAddressInfo.addressTabList}}" wx:key="addressTab_+{{tabIndex}}" wx:for-item="tabItem" wx:for-index="tabIndex" bindtap="handleTabClick" data-index="{{tabIndex}}" data-name="{{tabItem.name}}">{{tabItem.name}}</view>
+      </view>
+      <view class="area-sel-list">
+        <scroll-view scroll-y class="area-sel-scroll">
+          <view class="area-item {{item.selected ? 'selected':''}}" wx:for="{{handledAddressInfo.showedAdressList}}" wx:key="{{item.id}}" bindtap="handleAddressClick" data-id="{{item.id}}" data-name="{{item.name}}">{{item.name}}</view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

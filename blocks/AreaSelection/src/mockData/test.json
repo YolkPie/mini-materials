@@ -1,0 +1,133 @@
+{
+  "cod"e: 1,
+  desc: "成功",
+  value: [
+    {
+      "id": 255601,
+      "name": "建华",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 257201,
+      "name": "柳辛庄",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 248001,
+      "name": "丰收路",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 249501,
+      "name": "广安",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 258801,
+      "name": "热电厂",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 260201,
+      "name": "十里铺",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 265201,
+      "name": "体育北大街",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 265901,
+      "name": "桃园",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 268201,
+      "name": "西兆通",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 269001,
+      "name": "跃进路",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 261401,
+      "name": "胜北",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 270501,
+      "name": "沿东",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 283301,
+      "name": "滹沱河",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 271401,
+      "name": "义堂",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 262701,
+      "name": "谈固",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 263901,
+      "name": "土贤庄",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 244501,
+      "name": "白佛",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 245401,
+      "name": "长征街",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 250401,
+      "name": "高营",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 252401,
+      "name": "和平东路",
+      "3Cod": false,
+      "cod": false
+    },
+    {
+      "id": 253401,
+      "name": "建北",
+      "3Cod": false,
+      "cod": false
+    }
+  ],
+  totalCount: 0
+}
