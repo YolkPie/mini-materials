@@ -1,0 +1,46 @@
+<!-- 多级筛选列表组件 -->
+<view>
+  <view class="filter-list-mask" bindtap="hideFilterList" hidden="{{!isShowFilterList}}"></view>
+  <view class="filter-list-container">
+    <view class="sel-value" bindtap="showFilterList">
+      <text>{{handledFilterInfo.finalSelectedName || '位置'}}</text>
+      <image class="sel-arrow-icon" src="{{isShowFilterList ? icons.upArrowIcon :icons.downArrowIcon}}"></image>
+    </view>
+    <view class="filter-list-box" hidden="{{!isShowFilterList}}">
+      <!-- 一级列表 start -->
+      <view class="filter-list-column filter-list-first">
+        <scroll-view scroll-y class="filter-list-scroll">
+          <view class="filter-list-item {{firstItem.selected ? 'selected' : ''}}"
+                wx:for="{{handledFilterInfo.firstFilterList}}" wx:for-item="firstItem" wx:key="firstFilterList_+{{index}}"
+                data-id="{{firstItem.id}}" data-name="{{firstItem.name}}" data-filter-level="1" bindtap="addressItemClick">
+            {{firstItem.name}}
+          </view>
+        </scroll-view>
+      </view>
+      <!-- 一级列表 end -->
+      <!-- 二级列表 start -->
+      <view class="filter-list-column filter-list-second">
+        <scroll-view scroll-y class="filter-list-scroll" scroll-top="{{scrollSecondTopHeight}}">
+          <view class="filter-list-item {{secondItem.selected ? 'selected' : ''}}"
+                wx:for="{{handledFilterInfo.secondFilterList}}" wx:for-item="secondItem" wx:key="secondFilterList_+{{index}}"
+                data-id="{{secondItem.id}}" data-name="{{secondItem.name}}" data-filter-level="2"
+                bindtap="addressItemClick">{{secondItem.name}}
+          </view>
+        </scroll-view>
+      </view>
+      <!-- 二级列表 end -->
+      <!-- 三级列表 start -->
+      <view class="filter-list-column filter-list-third"
+            wx:if="{{handledFilterInfo.thirdFilterList && handledFilterInfo.thirdFilterList.length}}">
+        <scroll-view scroll-y class="filter-list-scroll">
+          <view class="filter-list-item {{thirdItem.selected ? 'selected' : ''}}"
+                wx:for="{{handledFilterInfo.thirdFilterList}}" wx:for-item="thirdItem" wx:key="thirdFilterList_+{{index}}"
+                data-id="{{thirdItem.id}}" data-name="{{thirdItem.name}}" data-filter-level="3" bindtap="addressItemClick">
+            {{thirdItem.name}}
+          </view>
+        </scroll-view>
+      </view>
+      <!-- 三级列表 end -->
+    </view>
+  </view>
+</view>
