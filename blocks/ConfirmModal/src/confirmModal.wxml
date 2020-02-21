@@ -1,0 +1,20 @@
+<!--modal组件-->
+<view class="modal-box" wx:if="{{isShow}}" bindtap="handleClickMask" catchtouchmove="preventD">
+  <view class="modal-container {{isSpecialModal ? 'special-container' : ''}}" catchtap="clickModal">
+    <view class="circle-close-box" catchtap="cancel" wx:if="{{isShowCloseBtn}}">
+      <image src="{{imgIcons.circleClose}}" class="circle-close-img"></image>
+    </view>
+    <view class="modal-content">
+      <slot></slot>
+    </view>
+    <view class="btn-box">
+      <block wx:if="{{showCancel}}">
+        <view class="btn-style cancel-btn" catchtap="cancel">{{cancelText}}</view>
+        <view class="btn-style confirm-btn" catchtap="confirm">{{confirmText}}</view>
+      </block>
+      <block wx:else>
+        <view class="btn-style one-btn confirm-btn" catchtap="confirm">{{confirmText}}</view>
+      </block>
+    </view>
+  </view>
+</view>

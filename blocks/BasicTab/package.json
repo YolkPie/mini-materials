@@ -1,0 +1,17 @@
+{
+  "name": "basic-tab",
+  "version": "1.0.0",
+  "description": "基础tab组件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/BasicTab"
+  },
+  "blockConfig": {
+    "name": "basic-tab",
+    "screenshot": "https://img14.360buyimg.com/imagetools/jfs/t1/106552/40/12690/25140/5e4f9d62E242d5383/df6b9203903075db.png",
+    "title": "基础tab组件",
+    "categories": [
+      "tab"
+    ]
+  }
+}

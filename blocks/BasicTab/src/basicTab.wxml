@@ -1,0 +1,7 @@
+<scroll-view scroll-x enable-flex class="option-tabs">
+  <view class="option-tabs-item {{activeState === tabIndex+1 ? 'option-tabs-item-current':''}}" wx:for="{{tabs}}" wx:for-item="tabItem" wx:for-index="tabIndex" wx:key="tabItem_+{{tabIndex}}" data-tabIndex="{{tabIndex+1}}" bindtap="switchOption">
+    <text>{{tabItem.title}}</text>
+    <view class="tab-bar" wx:if="{{activeState == tabIndex+1}}"></view>
+    <view class="tab-split" wx:if="{{tabIndex !== tabs.length - 1}}"></view>
+  </view>
+</scroll-view>

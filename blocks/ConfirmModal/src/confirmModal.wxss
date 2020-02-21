@@ -1,0 +1,81 @@
+/* modal begin */
+.modal-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 10000;
+}
+.modal-container {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40rpx;
+  width: 540rpx;
+  min-height: 320rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.modal-content {
+  flex: 1;
+  margin: 90rpx 88rpx 0 88rpx;
+  line-height: 36rpx;
+  color: #747474;
+}
+.special-container {
+  width: 616rpx;
+}
+.special-container .modal-content {
+  margin: 70rpx 56rpx 0 56rpx;
+}
+.circle-close-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80rpx;
+  height: 80rpx;
+}
+.circle-close-img {
+  margin-top: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+.btn-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+  height:76rpx;
+  /*line-height:76rpx;*/
+  border-radius: 38rpx;
+}
+.one-btn {
+  width: 220rpx;
+}
+.cancel-btn {
+  margin-right: 40rpx;
+  color: #C7A26A;
+  border: 2rpx solid #C7A26A;
+}
+.confirm-btn {
+  color: #fff;
+  background: linear-gradient(314deg,rgba(199,162,106,1) 0%,rgba(216,188,145,1) 100%);
+}
+/* modal end */
