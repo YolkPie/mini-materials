@@ -1,0 +1,54 @@
+/* 联系客服按钮 */
+.kefu-wrapper {
+  position: relative;
+  position: fixed;
+  bottom: 166rpx;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.kefu-wrapper.hide {
+  right: -180rpx;
+}
+.kefu-wrapper .concat-icon {
+  background-image: url(//img14.360buyimg.com/imagetools/jfs/t1/136757/10/8281/21942/5f474939Ee945eb6f/a5dbf4aee5d425de.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: -53rpx;
+  z-index: 22;
+}
+.kefu-wrapper .concat-label {
+  background-image: url(//img10.360buyimg.com/imagetools/jfs/t1/138353/5/6846/46206/5f474939Efdd94db0/1179296cc0a8655d.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 181rpx;
+  height: 94rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 27rpx;
+  z-index: 11;
+}
+.kefu-wrapper.hide .concat-label {
+  opacity: 0.6;
+}
+.kefu-wrapper .concat-label text {
+  color: rgba(255,255,255,1);
+}
+.kefu-wrapper .concat-label text.label {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+}
+.kefu-wrapper .concat-label text.number {
+  font-family: JDZhengHei-01-Blod;
+  font-size: 23rpx;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "float-kefu",
+  "version": "1.0.0",
+  "description": "边缘吸附客服按钮",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/miniProgram-materials/tree/master/blocks/FloatKefu"
+  },
+  "blockConfig": {
+    "name": "float-kefu",
+    "screenshot": "https://img13.360buyimg.com/imagetools/jfs/t1/116264/37/16464/37209/5f4c6c2aE4619e91b/2dc227d330d1535e.jpg",
+    "themePackage": "@icedesign/theme",
+    "title": "FloatKefu",
+    "categories": [
+      "Kefu"
+    ]
+  }
+}

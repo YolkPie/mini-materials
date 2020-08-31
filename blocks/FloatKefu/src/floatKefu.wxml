@@ -1,0 +1,8 @@
+<!-- 联系客服按钮 -->
+<view bindtap="kefuClick" wx:if="{{phoneNumber}}" class="{{showKefuLabel ? 'kefu-wrapper' : 'kefu-wrapper hide'}}">
+	<view class="concat-icon" />
+	<view class="concat-label">
+		<text class="label">客服热线</text>
+		<text class="number">{{phoneNumber}}</text>
+	</view>
+</view>
