@@ -1,0 +1,14 @@
+{
+  "name": "swipe-item",
+  "version": "1.0.0",
+  "description": "带左滑操作卡片",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/SwipeItem"
+  },
+  "blockConfig": {
+    "name": "swipe-item",
+    "screenshot": "https://img13.360buyimg.com/imagetools/jfs/t1/117675/11/18283/21228/5f69f2c9E589cb8fd/2b835a103727f4fb.png",
+    "title": "带左滑操作卡片"
+  }
+}

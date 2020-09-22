@@ -1,0 +1,69 @@
+<view class="swipeitem">
+  <wd-swipe-action custom-class="swipeitem__wrap" value="{{disabled ? 'close' : ''}}">
+    <view class="item">
+      <view class="item__top" bindtap="linkHandle" data-id="{{item.skuDetailId}}">
+        <view class="item__imgwrap">
+          <image
+            class="item__img"
+            mode="scaleToFill"
+            src="{{'https://img1' + item.skuId%5 + '.360buyimg.com/imagetools/s140x140_' + item.mainImageUrl}}"
+          ></image>
+          <view class="item__notaudit" jd:if="{{item.auditStatus === auditStatusEnum.toAudit.value || item.auditStatus === auditStatusEnum.toAudit3.value}}">待审核</view>
+          <view class="item__auditreject" jd:if="{{item.auditStatus === auditStatusEnum.rejected.value || item.auditStatus === auditStatusEnum.rejected3.value}}" data-id="{{item.skuDetailId}}" catchtap="checkReasonHandle">审核驳回</view>
+        </view>
+        <view class="item__info">
+          <view class="item__title">{{item.skuName && item.skuName.length ? item.skuName : ''}}</view>
+          <view class="item__types">
+            <view class="item__type" jd:if="{{item.auctionType === 1}}">升价拍</view>
+            <view class="item__type" jd:if="{{item.auctionType === 3}}">暗拍</view>
+            <view class="item__type" jd:if="{{item.auctionType === 4}}">一口价</view>
+            <view class="item__type" jd:if="{{item.bail === 0 && item.auctionType !== 3 && item.auctionType !== 4}}">免交保</view>
+            <view class="item__type" jd:if="{{item.cycleType === 2 && item.auctionType !== 3 && item.auctionType !== 4}}">循环拍</view>
+          </view>
+          <view class="item__infos">
+            <text class="item__infoitem" jd:if="{{item.stockNum !== null}}">库存{{item.stockNum}}件</text>
+            <text class="item__infoitem" jd:if="{{item.auctionType === 1 && item.initialPrice !== null && item.auctionType !== 3 && item.auctionType !== 4}}">加价幅度{{item.initialPrice}}元</text>
+            <text class="item__infoitem" jd:if="{{item.delayPeriod !== null && item.auctionType !== 3 && item.auctionType !== 4}}">{{item.delayPeriod > 0 ? '延时' + item.delayPeriod + '分钟' : '不可延时'}}</text>
+          </view>
+          <view class="item__pricewrap">
+            <view jd:if="{{item.auctionType === 3}}" class="item__price price">
+              <text jd:if="{{item.reservedPrice}}" class="price__label">保留价</text>
+              <text jd:if="{{item.reservedPrice}}" class="price__unit">{{item.reservedPrice !== null ? '￥' : ''}}</text>
+              <text jd:if="{{item.reservedPrice}}" class="price__count">{{item.reservedPrice !== null ? item.reservedPrice : ''}}</text>
+            </view>
+            <view jd:elif="{{item.auctionType === 4}}" class="item__price price">
+              <text class="price__label">一口价</text>
+              <text class="price__unit">{{item.initialPrice !== null ? '￥' : ''}}</text>
+              <text class="price__count">{{item.initialPrice !== null ? item.initialPrice : ''}}</text>
+            </view>
+            <view jd:else class="item__price price">
+              <text class="price__label">起拍价</text>
+              <text class="price__unit">{{item.initialPrice !== null ? '￥' : ''}}</text>
+              <text class="price__count">{{item.initialPrice !== null ? item.initialPrice : ''}}</text>
+            </view>
+            <button jd:if="{{editStatus == editStatusEnum.notPublished.value && !disabled && item.auditStatus !== auditStatusEnum.toAudit.value && item.auditStatus !== auditStatusEnum.toAudit3.value}}" class="item__button" catchtap="publishHandle" data-id="{{item.skuDetailId}}">立即发布</button>
+            <button jd:if="{{editStatus == editStatusEnum.deleted.value && !disabled}}" class="item__button" catchtap="restoreHandle" data-id="{{item.skuDetailId}}">还原</button>
+          </view>
+        </view>
+      </view>
+      <!-- <view class="item__bottom" bindtap="viewHandle" data-id="{{item.skuDetailId}}">
+        <text class="item__link">历史拍卖详情</text>
+        <image
+          class="item__detail"
+          mode="scaleToFill"
+          src="https://img12.360buyimg.com/imagetools/jfs/t1/125846/39/8764/826/5f2a578bE9a7c002c/e0b45c291f041b3b.png"
+        ></image>
+      </view> -->
+    </view>
+    <view jd:if="{{item.auditStatus !== auditStatusEnum.toAudit.value && item.auditStatus !== auditStatusEnum.toAudit3.value}}" slot="right" class="action">
+      <view class="action__item" bindtap="deleteHandle" data-id="{{item.skuDetailId}}">
+        <image
+          class="action__delete"
+          mode="scaleToFill"
+          src="https://img13.360buyimg.com/imagetools/jfs/t1/135604/33/6119/797/5f2a5769Eec0ba1f6/4dfd8f87c296f42b.png"
+        ></image>
+        <view class="action__text">删除</view>
+      </view>
+    </view>
+  </wd-swipe-action>
+</view>
