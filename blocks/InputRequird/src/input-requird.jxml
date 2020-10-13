@@ -1,0 +1,16 @@
+<view class="required-container">
+	<view class="required-label">
+		<view class="{{required ? 'required_yes' : ''}}">
+			<text class="container-header_title">{{title}}</text>
+		</view>
+		<view class="lable-explain" wx:if="{{explain}}" bindtap="lableExplain"></view>
+	</view>
+	
+	<view class="required-input">
+		<input type="{{type}}" maxlength="{{maxlength?maxlength:''}}" placeholder="{{placeholder?placeholder:'请输入'}}" value="{{value}}" disabled="{{disabled}}" bindinput="inputDown" bindblur="inputBlur" ruleStr="{{ruleStr}}"/>
+	</view>
+	<view wx:if="{{unit}}" class="required-unit"><text class="required-unit">{{unit}}</text></view>
+	<view class="required-action" wx:if="{{showAction}}">
+    	<text class="required-action_text">请正确填写{{title}}</text>
+	</view>
+</view>

@@ -1,0 +1,45 @@
+.required-container {
+    height: 50rpx;
+    padding:23rpx 0;
+    display: flex;
+    font-size: 28rpx;
+    border:none;
+    border-bottom:1rpx solid rgba(0, 0, 0, 0.09);
+    position: relative;
+    z-index: 1;
+  }
+  .required-label {
+    width:30%;
+    /* min-width: 20%; */
+    font-size: 28rpx;
+    line-height: 50rpx;
+    position: relative;
+    display: flex;
+  }
+  .required_yes::after {
+    content:'*';
+    font-size: 28rpx;
+    color:red;
+    padding-left:10rpx;
+  }
+  .lable-explain{
+    width:40rpx;
+    height: 40rpx;
+    background:url('https://img11.360buyimg.com/imagetools/jfs/t1/140781/7/6512/681/5f4365ecEfa8714e5/1345bb4df56dbc97.png') no-repeat center center;
+    background-size: 35rpx;
+    margin:5rpx 10rpx 0 10rpx;
+  }
+  .required-input {
+    width:70%;
+  }
+  .required-unit {
+    /* width:20rpx; */
+    text-align: right;
+  }
+  .required-action{
+    position: absolute;
+    bottom:-26rpx;
+    left:140rpx;
+    color:red;
+    font-size: 28rpx;
+  }

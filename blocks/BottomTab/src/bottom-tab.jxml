@@ -1,0 +1,8 @@
+<view class="tabBar {{isIphoneX?'isIphoneX':''}}">
+	<view class="tabBar-item {{item.disabled ? 'tabBar-item--disabeld' : currentTab == index ? 'tabBar-item--actived' :''}}" jd:for="{{list}}" bindtap="setIndexTab" data-item="{{item}}" data-index="{{index}}">
+		<view class="tabBar-item_badge" jd:if="{{item.badgeShow}}">{{item.badgeText}}</view>
+		<image src="{{item.disabled ? item.disabledIconPath : currentTab == index ? item.selectedIconPath : item.iconPath}}" class="tabBar-item_image"></image>
+		<view class="tabBar-item_text">{{item.text}}</view>
+	</view>
+</view>
+<wd-toast id="wd-toast" position="bottom" />

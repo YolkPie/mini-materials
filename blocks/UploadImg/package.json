@@ -1,0 +1,14 @@
+{
+  "name": "upload-img",
+  "version": "1.0.0",
+  "description": "上传图片",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/UploadImg"
+  },
+  "blockConfig": {
+    "name": "upload-img",
+    "screenshot": "https://img14.360buyimg.com/imagetools/jfs/t1/110947/30/20180/74837/5f8540d0Ea1a9eaa1/3e2d682b91992635.png",
+    "title": "上传图片"
+  }
+}

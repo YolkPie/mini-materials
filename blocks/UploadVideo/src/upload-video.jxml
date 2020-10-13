@@ -1,0 +1,26 @@
+<!--index.jxml-->
+<div class="box">
+	<view class="hidedes-box">
+		<view class="hidedes-title">图片</view>	
+		<view class="main-imgbox">
+			<view class="selected-imgbox" wx:for="{{mainImgList}}" wx:for-item="item">
+				<view class="selected-imgcon">
+				<image class="upimg" src="{{'https://img13.360buyimg.com/n1/' + item.url}}"></image>
+				</view>
+				<view class="selected-imgdele" wx:if="{{!readOnly}}" data-imgid="{{index}}" bindtap="deleteImageMain"></view>
+			</view>
+			<view class="selected-imgbox" wx:if="{{upMainImgsLoadingList.length && item && item.length>5}}" wx:for="{{upMainImgsLoadingList}}" wx:for-item="item">
+				<view class="selected-imgcon">
+				<image class="upimg" src="{{(item && item.length>5)?item:''}}"></image>
+				</view>
+				<view class="selected-loading"><view class="selected-imgloading"></view></view>
+			</view>
+			
+			<view wx:if="{{!readOnly}}" class="selected-imgbox" bindtap="chooseImage" data-type="mainimg">
+				<view class="selected-imgupcon">
+				<image style="width: 28px; height: 28px;" src="../../assets/img/uploadimg.png"></image>
+				</view>
+			</view>	
+		</view>	
+	</view>
+</div>

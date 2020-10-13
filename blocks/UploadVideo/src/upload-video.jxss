@@ -1,0 +1,138 @@
+/**index.jxss**/
+page {
+    height: 100%;
+  }
+  .box {
+    /* height: 100%; */
+  }
+  .required_yes::after {
+    content:'*';
+    font-size: 24rpx;
+    color:red;
+    padding-left:10rpx;
+  }
+  .img-req::after{
+    position: absolute;
+    top:0;
+    content:'*';
+    font-size: 24rpx;
+    color:red;
+    padding-left:5rpx;
+  }
+  .required-label {
+    display: inline-block;
+    /* width:20%; */
+    font-size: 28rpx;
+    line-height: 50rpx;
+    position: relative;
+  }
+  .rightselect{
+    position: absolute;
+    right: 0;
+    top:10rpx;
+  }
+  
+  .main-imgbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+  }
+  .selected-imgbox{
+    position: relative;
+    display: flex;
+    padding:30rpx 28rpx 0 0;
+    width:110rpx;
+    height: 110rpx;
+  }
+  .selected-imgdele{
+    position: absolute;
+    top: 10rpx;
+    right:10rpx;
+    height: 32rpx;
+    width: 32rpx;
+    background:url('https://img12.360buyimg.com/imagetools/jfs/t1/138955/33/5250/796/5f326a2aE1d620bcf/68bb21a5c61dc8a0.png') no-repeat center center;
+    background-size: cover;
+  }
+  .selected-loading{
+    position: absolute;
+    top: 30rpx;
+    left:0rpx;
+    width:110rpx;
+    height: 110rpx;
+    background:rgba(0, 0, 0, 0.5);
+  }
+  .selected-imgloading {
+    height: 100rpx;
+    width: 100rpx;
+    margin:5rpx auto;
+    background:url('https://img11.360buyimg.com/imagetools/jfs/t1/142827/31/10457/2144/5f81190fE474c35f6/64a1708b26684bfa.gif') no-repeat center center;
+    background-size: 60rpx;
+  }
+  .selected-imgcon{
+    position: relative;
+    height: 108rpx;
+    width: 108rpx;
+    border:1rpx solid rgba(0, 0, 0, 0.09);
+  }
+  .upimg{
+    height: 108rpx;
+    width: 108rpx;
+  }
+  .upimg-icon {
+    width: 48rpx;
+    height: 48rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .selected-imgupcon{
+    height: 83rpx;
+    width: 82rpx;
+    border:1rpx solid rgba(0, 0, 0, 0.09);
+    background-color: rgba(0,0,0,0.04);
+    padding:25rpx 0 0 26rpx;
+    font-size: 26rpx;
+  }
+  .selected-videoupcon{
+    height: 108rpx;
+    width: 108rpx;
+    border:1rpx solid rgba(0, 0, 0, 0.09);
+  }
+  .select-imgbox__video {
+    width: 100%;
+    height: 100%;
+  }
+  .selected-imgbtn{
+    display: flex;
+    padding:30rpx 20rpx 0 0;
+    width:110rpx;
+    height: 110rpx;
+    background-color: red;
+  }
+  
+  /* 去掉input的border */
+  .input-index--wd-input:after {
+    display: none;
+  }
+  
+  /* 文本框输入样式 */
+  .hidedes-box{
+    padding: 30rpx;
+    margin-bottom: 30rpx;
+    background: #FFF;
+  }
+  .hidedes-title{
+    color:rgba(0, 0, 0, 0.45);
+    font-size: 28rpx;
+    font-weight: bold;
+  }
+  .hidedes-text{
+    padding:60rpx 30rpx;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.85);
+    font-size: 26rpx;
+  }
+  
+  
+  

@@ -1,0 +1,14 @@
+{
+  "name": "upload-video",
+  "version": "1.0.0",
+  "description": "上传视频",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/UploadVideo"
+  },
+  "blockConfig": {
+    "name": "upload-video",
+    "screenshot": "https://img14.360buyimg.com/imagetools/jfs/t1/152877/34/2071/255165/5f8540d6Edc47674f/1dcf3a2015375b99.png",
+    "title": "上传视频"
+  }
+}

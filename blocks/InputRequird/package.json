@@ -1,0 +1,14 @@
+{
+  "name": "input-requird",
+  "version": "1.0.0",
+  "description": "输入框带必填项",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/InputRequeird"
+  },
+  "blockConfig": {
+    "name": "input-requird",
+    "screenshot": "https://img12.360buyimg.com/imagetools/jfs/t1/118270/10/20167/20978/5f8540dcE7e1cc0d0/fc74e78809ecd07b.png",
+    "title": "输入框带必填项"
+  }
+}

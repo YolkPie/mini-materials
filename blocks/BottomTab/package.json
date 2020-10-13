@@ -1,0 +1,14 @@
+{
+  "name": "bottom-tab",
+  "version": "1.0.0",
+  "description": "底部切换tab",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/BottomTab"
+  },
+  "blockConfig": {
+    "name": "bottom-tab",
+    "screenshot": "https://img14.360buyimg.com/imagetools/jfs/t1/132259/36/12175/12877/5f8540e0Eebec9604/d8842d32f043a417.png",
+    "title": "底部切换tab"
+  }
+}
