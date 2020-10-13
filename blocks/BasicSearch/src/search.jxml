@@ -1,0 +1,27 @@
+<view class="{{'j-search ' + (isFocus ? 'j-search--focus ' : ' ') + (type === 'mini' ? 'j-search--mini' : '')}}">
+  <view class="j-search__wrap">
+    <image
+      class="j-search__search"
+      mode="scaleToFill"
+      src="https://img13.360buyimg.com/imagetools/jfs/t1/144317/35/4283/2105/5f24e4e4Ecab3c2cc/b592018cc39f3c57.png"
+    ></image>
+    <input
+      class="j-search__input"
+      value="{{inputValue}}"
+      bindinput="handleInput"
+      placeholder="{{ placeholder }}"
+      placeholder-class="j-search__placeholder"
+      confirm-type="search"
+      bindfocus="handleFocus"
+      bindconfirm="handleConfirm"
+    />
+    <image
+      jd:if="{{inputValue && inputValue.length && isFocus}}"
+      class="j-search__remove"
+      mode="scaleToFill"
+      src="https://img11.360buyimg.com/imagetools/jfs/t1/113768/31/13995/787/5f2a5a7fEd9c55f39/f740f916174359e7.png"
+      bindtap="handleClear"
+    ></image>
+  </view>
+  <text class="j-search__cancel" bindtap="handleCancel">取消</text>
+</view>

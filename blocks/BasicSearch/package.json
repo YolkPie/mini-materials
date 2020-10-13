@@ -1,0 +1,14 @@
+{
+  "name": "basic-search",
+  "version": "1.0.0",
+  "description": "搜索",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/BasicSearch"
+  },
+  "blockConfig": {
+    "name": "basic-search",
+    "screenshot": "https://img10.360buyimg.com/imagetools/jfs/t1/141804/20/10674/16477/5f85a2c2E1fa834d7/1b39d562acffbf3a.png",
+    "title": "搜索"
+  }
+}
