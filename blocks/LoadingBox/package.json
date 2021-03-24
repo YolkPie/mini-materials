@@ -1,0 +1,17 @@
+{
+  "name": "loading-box",
+  "version": "1.0.0",
+  "description": "loading 组件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/LoadingBox"
+  },
+  "blockConfig": {
+    "name": "loading-box",
+    "screenshot": "https://img14.360buyimg.com/imagetools/jfs/t1/170077/9/14678/9362/605aad55E3be69350/0962cc26395b5efc.png",
+    "title": "loading 组件",
+    "categories": [
+      "loading"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+<view class="to-top" wx:if="{{isRender}}">
+  <view class="to-top__content {{isShow?'fade-in':'fade-out'}}" catchtap="toClickToTop">
+    <image src="{{upArrowIcon}}" class="to-top__up-arrow"></image>
+    <text>顶部</text>
+  </view>
+</view>

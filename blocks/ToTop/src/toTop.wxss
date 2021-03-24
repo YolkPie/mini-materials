@@ -1,0 +1,49 @@
+.to-top {
+  position: fixed;
+  right: 24rpx;
+  bottom: 156rpx;
+}
+.to-top__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 74rpx;
+  height: 74rpx;
+  background: #fff;
+  border: 2rpx solid rgba(53,53,53,0.2);
+  border-radius: 50%;
+  box-shadow:  0 0 6rpx 0 rgba(53,53,53,0.14);
+  /*opacity: 0.95;*/
+  font-size: 20rpx;
+  color: #666;
+  /*opacity: 0;*/
+}
+.to-top__up-arrow {
+  width: 24rpx;
+  height: 24rpx;
+}
+.to-top__content.fade-in {
+  /*opacity: 0.95;*/
+  animation: fadeIn 2s normal;
+}
+.to-top__content.fade-out {
+  opacity: 0;
+  animation: fadeOut 1s normal;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.95;
+  }
+}
+@keyframes fadeOut {
+  0%{
+    opacity: 0.95;
+  }
+  100%{
+    opacity: 0;
+  }
+}

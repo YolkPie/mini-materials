@@ -1,0 +1,13 @@
+<view class="left-right-slider" style="transform:translateX({{isSlide?translateX:maxSlideWidth}}rpx);{{transitionStyle}}">
+  <view
+    style="margin-left:-{{maxSlideWidth}}rpx;"
+    class="left-right-slider__left"
+    bindtouchstart="touchStartFn"
+    bindtouchmove="touchMoveFn" bindtouchend="touchEndFn"
+  >
+    <slot name="left"></slot>
+  </view>
+  <view class="left-right-slider__right">
+    <slot name="right"></slot>
+  </view>
+</view>

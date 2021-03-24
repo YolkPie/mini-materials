@@ -1,0 +1,17 @@
+{
+  "name": "to-top",
+  "version": "1.0.0",
+  "description": "回到顶部组件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/ToTop"
+  },
+  "blockConfig": {
+    "name": "to-top",
+    "screenshot": "https://img10.360buyimg.com/imagetools/jfs/t1/160673/32/14510/16667/605ab040E72e68d49/a8c9103f6c882663.png",
+    "title": "回到顶部组件",
+    "categories": [
+      "basic"
+    ]
+  }
+}
