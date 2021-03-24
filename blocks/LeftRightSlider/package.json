@@ -1,17 +1,17 @@
 {
-  "name": "to-top",
+  "name": "left-right-slider",
   "version": "1.0.0",
-  "description": "回到顶部组件",
+  "description": "左右滑动组件",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/ToTop"
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/LeftRightSlider"
   },
   "blockConfig": {
-    "name": "to-top",
-    "screenshot": "https://img10.360buyimg.com/imagetools/jfs/t1/160673/32/14510/16667/605ab040E72e68d49/a8c9103f6c882663.png",
-    "title": "回到顶部组件",
+    "name": "left-right-slider",
+    "screenshot": "https://img12.360buyimg.com/imagetools/jfs/t1/170945/7/14510/64652/605aae7fEbd0a8495/a37534d552340efd.png",
+    "title": "左右滑动组件",
     "categories": [
-      "basic"
+      "slider"
     ]
   }
 }
