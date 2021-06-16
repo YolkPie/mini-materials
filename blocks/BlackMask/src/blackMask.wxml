@@ -1,0 +1,4 @@
+<view class="black-mask wrapper-class" style="background-color: {{backgroundColor}}" catchtouchmove="preventMove">
+  <slot></slot>
+  <view class="black-mask_close" catchtap="closeMask"></view>
+</view>

@@ -1,0 +1,17 @@
+{
+  "name": "black-mask",
+  "version": "1.0.0",
+  "description": "遮罩层",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/BlackMask"
+  },
+  "blockConfig": {
+    "name": "black-mask",
+    "screenshot": "https://img13.360buyimg.com/imagetools/jfs/t1/178061/8/9472/74899/60c9a188E3daef4ab/36fe984806136c82.png",
+    "title": "遮罩层",
+    "categories": [
+      "canvas"
+    ]
+  }
+}

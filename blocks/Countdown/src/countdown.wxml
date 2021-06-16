@@ -1,0 +1,5 @@
+<view class="wrapper-class">
+  <block wx:for="{{countdown}}" wx:key="{{index}}">
+    <text class='time-class'>{{item}}</text>{{index==countdown.length-1?"":":"}}
+  </block>
+</view>

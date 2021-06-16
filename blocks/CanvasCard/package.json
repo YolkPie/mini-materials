@@ -1,0 +1,17 @@
+{
+  "name": "canvas-card",
+  "version": "1.0.0",
+  "description": "海报绘制组件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/CanvasCard"
+  },
+  "blockConfig": {
+    "name": "canvas-card",
+    "screenshot": "https://img12.360buyimg.com/imagetools/jfs/t1/179020/15/9396/522483/60c995eeE20a313f3/6d4ebe0c8d3a5e42.png",
+    "title": "海报绘制组件",
+    "categories": [
+      "basic"
+    ]
+  }
+}

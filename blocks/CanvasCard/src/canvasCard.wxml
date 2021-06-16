@@ -1,0 +1,11 @@
+<!--<canvas-->
+<!--  canvas-id="{{canvasId}}"-->
+<!--  style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;"-->
+<!--  wx:if="{{isShowCanvas}}"-->
+<!--&gt;</canvas>-->
+<canvas
+  type="2d"
+  id="{{canvasId}}"
+  style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;"
+  wx:if="{{isShowCanvas}}"
+></canvas>
