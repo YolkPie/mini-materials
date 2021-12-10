@@ -1,0 +1,17 @@
+{
+  "name": "portrait",
+  "version": "1.0.0",
+  "description": "展示性别的头像组件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/mini-materials/tree/master/blocks/Portrait"
+  },
+  "blockConfig": {
+    "name": "to-top",
+    "screenshot": "https://storage.360buyimg.com/imgtools/196435505d-9b57ee00-598b-11ec-9bf6-ed6646000162.jpeg",
+    "title": "展示性别的头像组件",
+    "categories": [
+      "basic"
+    ]
+  }
+}

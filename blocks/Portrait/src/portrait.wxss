@@ -1,0 +1,9 @@
+@import '/flex.wxss';
+@import '/app.wxss';
+
+.portrait-box {}
+
+.portrait-box_image {
+  border-radius: 50%;
+  overflow: hidden;
+}

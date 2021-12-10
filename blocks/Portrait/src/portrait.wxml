@@ -1,0 +1,3 @@
+<view class="portrait-box">
+  <image class="portrait-box_image" binderror="handleImageLoadError" style="{{imageStyle}}" src="{{imgurl}}" />
+</view>
