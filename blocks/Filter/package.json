@@ -1,0 +1,18 @@
+{
+  "name": "float-kefu",
+  "version": "1.0.0",
+  "description": "下拉展开样式筛选",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YolkPie/miniProgram-materials/tree/master/blocks/Filter"
+  },
+  "blockConfig": {
+    "name": "float-kefu",
+    "screenshot": "https://storage.360buyimg.com/imgtools/98f688c066-6727ae30-598c-11ec-8576-cd11acddf103.jpeg",
+    "themePackage": "@icedesign/theme",
+    "title": "FloatKefu",
+    "categories": [
+      "Kefu"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+@import '/css/appBase.wxss';
+
+.action-sheet {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    z-index         : 10000;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.action-sheet-box {
+    position        : absolute;
+    bottom          : 0;
+    left            : 0;
+    background-color: #fff;
+    width           : 100%;
+    height          : auto;
+}
+
+.action-sheet-items {
+    padding   : 24rpx 0;
+    max-height: 60vh;
+    overflow  : auto;
+}
+
+.action-sheet-item {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 24rpx 32rpx;
+    box-sizing     : border-box;
+}
+
+.action-sheet-item-title {
+    color      : #2E2E2E;
+    font-size  : 30rpx;
+    line-height: 42rpx;
+}
+
+.action-sheet-item-title-active {
+    color: #C7A26A;
+}
+
+.action-sheet-item image {
+    width : 32rpx;
+    height: 32rpx;
+}
+
+.action-sheet-item:nth-child(1) {
+    padding-top: 50rpx;
+}
+
+.actiond-sheet-footer {
+    padding   : 30rpx 32rpx;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+}
+
+.actiond-sheet-footer-confirm {
+    width        : 100%;
+    height       : 80rpx;
+    background   : linear-gradient(226.9deg, rgba(199, 162, 106, 1) 0%, rgba(216, 188, 145, 1) 100%);
+    border-radius: 8rpx;
+    line-height  : 80rpx;
+    text-align   : center;
+    color        : #fff;
+}

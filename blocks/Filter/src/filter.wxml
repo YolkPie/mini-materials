@@ -1,0 +1,10 @@
+<view class="filter-box">
+  <view class="filter-box-item" wx:for="{{viewList}}" wx:key="index" data-key="{{index}}" data-value="{{item.value}}" bindtap="handleShowActionSheet">
+    <text class="{{item.title !== item.defaultTitle ? 'filter-box-item-isactive' : ''}}" >{{item.title}}</text>
+    <image src="{{ item.title !== item.defaultTitle ? '/images/stroke/isselect.png' : '/images/stroke/filter_sheet.png'}}" />
+  </view>
+
+  <view class="filter-box-bg" catchtap="handleVisibleDialog" wx:if="{{showActionSheet}}"></view>
+
+  <action-sheet showActionSheet="{{showActionSheet}}" viewStyle="background-color: #fff;position: absolute; left: -24rpx; top: 35rpx; width: 100vw;" actionSheetOptions="{{actionSheetOptions}}" bind:confirm="handleConfirm" bind:changeActionSheetStatus="changeActionSheetStatus" actionSheetList="{{actionSheetList}}"></action-sheet>
+</view>

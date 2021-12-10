@@ -1,0 +1,14 @@
+<view class="{{viewStyle ? '' : 'action-sheet'}}" wx:if="{{showView}}" catchtap="changeActionSheetStatus">
+  <view class="{{viewStyle ? '' : 'action-sheet-box'}}" style="{{viewStyle}}">
+    <view class="action-sheet-items">
+      <view class="action-sheet-item" wx:for="{{sheetList}}" wx:key="index" data-data="{{item}}" data-index="{{index}}" catchtap="handleSelect">
+        <text class="action-sheet-item-title {{item.isactive ? 'action-sheet-item-title-active' : ''}}">{{item.title}}</text>
+        <image wx:if="{{item.isactive}}" class="action-sheet-item-active" src="/images/stroke/active.png" />
+        <image wx:if="{{!item.isactive}}" class="action-sheet-item-unactive" src="/images/stroke/unactive.png" />
+      </view>
+    </view>
+    <view class="actiond-sheet-footer" catchtap="changeNoActionSheetStatus">
+      <view class="actiond-sheet-footer-confirm" catchtap="handleConfirm">确定</view>
+    </view>
+  </view>
+</view>

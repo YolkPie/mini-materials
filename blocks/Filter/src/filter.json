@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "action-sheet": "/components/actionSheet/actionSheet"
+
+  }
+}
